@@ -13,7 +13,12 @@ public class Main {
 
         System.out.println("ЗАДАЧА 1");
         int[] number = new int[3];
+        number[0] = 1;
+        number[1] = 2;
+        number[2] = 3;
+
         double[] weight = {1.57, 7.654, 9.986};
+
         int[] month = new int[12];
     }
 
@@ -96,10 +101,9 @@ public class Main {
         number[1] = 2;
         number[2] = 3;
         for (int i = 0; i < number.length; i++) {
-            if (i == number.length && i == number.length - 2) {
-                i = number.length + 1;
+            if (number[i] % 2 != 0) {
+                number[i] ++;
                 System.out.println(Arrays.toString(number));
-                // Не могу справиться с задачей. Не понимаю какую переменную или массив мне надо увеличит на 1//
             }
         }
     }
